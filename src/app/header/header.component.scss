@@ -1,0 +1,38 @@
+.nav li {
+    margin-left: 1rem;
+}
+
+.nav a {
+    color: #050000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav span:hover{
+    color: #aba3a3; 
+}
+.nav a:hover {
+    color: #aba3a3;
+}
+
+span {
+    padding-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span:hover{
+    color: #aba3a3;
+}
+
+.custom-class{
+    margin: 10px; /* Add margin to create space around the header */
+    background-color:transparent;
+    border-color: transparent;
+    
+}
+
+.custom-nav-class{
+    padding-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
