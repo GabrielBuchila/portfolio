@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgModule } from '@angular/core';
+import { provideHttpClient } from '@angular/common/http';
 
 export const routes: Routes = [
     {path:'home', component:HomeComponent}, //default route
@@ -16,6 +17,7 @@ export const routes: Routes = [
 
 NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    providers: [provideHttpClient()]
   })
   export class AppRoutingModule { }

@@ -1,16 +1,13 @@
 <div class="contact-container">
-    <form action="" class="contact-left">
+    <form class="contact-left" (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm">
         <div class="contact-left-title">
             <h2>Contact me</h2>
         </div>
-        <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
-        <input type="email" name="email" placeholder="email@example.com" class="contact-inputs" required>
-        <textarea name="message" placeholder="Type your message here" class="contact-inputs" cols="30" rows="10" required></textarea>
-        <button type="submit">Submit your message</button>
+        <input type="text" name="name"  id="name"placeholder="Name" class="contact-inputs" ngModel required>
+        <input type="email" name="email"  id="email" placeholder="email@example.com" class="contact-inputs" ngModel required>
+        <textarea name="message"  id="message" placeholder="Type your message here" class="contact-inputs" cols="30" rows="10" ngModel required></textarea>
+        <button type="submit" [disabled]="contactForm.invalid">Submit your message</button>
     </form>
-    <!-- <form action="" class="contact-rigth">
-        <div class="contact-left-rigth">
-
-        </div>
-    </form> -->
 </div>
+
+<p>{{status}}</p>
