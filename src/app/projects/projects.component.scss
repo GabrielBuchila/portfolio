@@ -1,0 +1,99 @@
+      .flex-container {
+      display: flex; /* Enables Flexbox layout */
+      justify-content: space-between; /* Optional: Adds space between the boxes */
+      margin-top: 60px;
+    }
+      .container-rigth {
+      flex: 1; /* Each box takes equal space */
+      margin: 10px; /* Optional: Adds space between the boxes */
+      padding: 20px;
+    }
+  
+    .title-about-me{
+      font-size: 50px;
+    }
+  
+    .about-me-text{
+      font-size: 19.5px;
+    }
+
+    .about-me-text span{
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .container-rigth a{
+      display:flex;
+      text-align:center;
+      flex-direction: column;
+      margin-top: 30px;
+      color: #050000;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+      border : 2px solid rgb(60, 255, 0);
+      border-radius: 15px;
+      animation: moveInBottom 0.7s 1.2s;
+      animation-fill-mode: backwards;
+      animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+      height: 35px;
+      width: 130px;
+      color:rgb(60, 255, 0) ;
+    }
+
+    //slideshow css
+
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+      }
+      
+      .slide-wrapper {
+        max-width: 100%; /* Ensure the image scales well */
+        width: 370px;  /* Set the desired width */
+        height: 500px; /* Set the desired height */
+        overflow: hidden; /* Hide parts of the image that exceed the container */
+        display: flex;
+        align-items: center; /* Center the image vertically */
+        justify-content: center; /* Center the image horizontally */
+        background-color: #f0f0f0; /* Optional: background color to show the container's edges */
+        border-radius: 20px;
+      }
+      
+      .slide {
+        max-width: 100%; /* Ensure the image scales well */
+        height: auto; /* Maintain aspect ratio for width */
+        position: relative;
+        top: +30%; /* Shift the image upwards to crop the top half */
+      }
+      
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 20px;
+        user-select: none;
+      }
+      
+      .prev {
+        left: 0;
+        border-radius: 8px 10px 10px 8px;
+      }
+      
+      .next {
+        right: 0;
+        border-radius: 8px 10px 10px 8px;
+      }
+      
+      .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      

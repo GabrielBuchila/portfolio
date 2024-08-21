@@ -1,1 +1,19 @@
-<p>projects works!</p>
+<div class="flex-container">
+    <div class="slideshow-container">
+        <div class="slide-wrapper">
+            <img [src]="images[currentIndex]" alt="Slideshow Image" class="slide">
+        </div>
+        <a class="prev" (click)="prevSlide()">&#10094;</a>
+        <a class="next" (click)="nextSlide()">&#10095;</a>
+    </div>
+    <div class="container-rigth">
+        <h1 class="title-about-me">SList.</h1>
+        <p class="about-me-text">
+            <span>Platform:</span> iOS. <br>
+            <span>Tools & Technologies:</span> Xcode, Swift Programming Language. <br>
+            <span>Objective:</span>This project was developed as a learning exercise to explore the Xcode IDE and the Swift programming language, driven by curiosity about iOS app development. The goal was to create a simple yet functional iOS application that allows users to manage multiple shopping lists, where each list can contain a variety of items.<br>
+            <span>Project Overview:</span>The Shopping List Manager app is a user-friendly iOS application that enables users to create and manage multiple shopping lists, each containing multiple items. The app provides a straightforward interface for adding, editing(in progress), and deleting lists and items, making it easy for users to organize their shopping needs. 
+        </p>
+        <a href="https://github.com/GabrielBuchila/ShoppingListManager.git">Learn more</a>
+    </div>
+</div>
