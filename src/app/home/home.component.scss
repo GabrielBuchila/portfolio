@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
 .home-container {
@@ -10,12 +10,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute; /* or fixed depending on the need */
+    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust as needed, can be in percentages or pixels */
-    max-width: 600px; /* Max width to keep it responsive */
+    width: 80%; 
+    max-width: 600px; 
     padding: 20px;
     text-align: center;
     font-size: 50px;
@@ -23,19 +23,19 @@
 
 @media (max-width: 768px) {
     .home-container {
-        font-size: 30px; /* Smaller font size for medium screens */
+        font-size: 30px;
         width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .home-container {
-        font-size: 20px; /* Even smaller font size for small screens */
+        font-size: 20px; 
         width: 100%;
     }
 }
 
-.home-container a{
+.home-aboutme{
     display:flex;
     text-align:center;
     flex-direction: column;
@@ -51,6 +51,25 @@
     animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
     height: 35px;
     width: 100px;
+    color: rgb(60, 255, 0);
+}
+.download-cv{
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+    margin-top: 30px;
+    color: #050000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    border : 2px solid rgb(60, 255, 0);
+    border-radius: 15px;
+    animation: moveInBottom 0.7s 1.2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+    height: 35px;
+    width: 150px;
+    color: rgb(60, 255, 0);
 }
 .header-line1 span{
     color: rgb(60, 255, 0);

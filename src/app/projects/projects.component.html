@@ -1,10 +1,26 @@
 <div class="flex-container">
+
+      <!-- Third project  -->
+  <div class="third-project-container">
+    <div class="container-rigth">
+        <h1 class="title-about-me">Portfolio.</h1>
+        <p class="about-me-text">
+            <span>Platform:</span> Web application. <br>
+            <span>Tools & Technologies:</span> VSCode, Angular and  Javascript Programming Language. <br>
+            <span>Objective:</span>In this project, I created a web application using Angular and JavaScript to showcase my work and professional background. The app provides an interactive platform where users can explore detailed information about my projects, skills, and achievements.<br>
+        </p>
+        <a href="https://github.com/GabrielBuchila/portfolio.git">Learn more</a>
+    </div>
+  </div>
+
+    <!-- first project  -->
+  <div class="first-project-container">
     <div class="slideshow-container">
         <div class="slide-wrapper">
-            <img [src]="images[currentIndex]" alt="Slideshow Image" class="slide">
+            <img [src]="sList_images[currentIndexSlist]" alt="Slideshow Image" class="slide">
         </div>
-        <a class="prev" (click)="prevSlide()">&#10094;</a>
-        <a class="next" (click)="nextSlide()">&#10095;</a>
+        <a class="prev" (click)="nextSlideSlist()">&#10094;</a>
+        <a class="next" (click)="prevSlideSlist()">&#10095;</a>
     </div>
     <div class="container-rigth">
         <h1 class="title-about-me">SList.</h1>
@@ -16,4 +32,26 @@
         </p>
         <a href="https://github.com/GabrielBuchila/ShoppingListManager.git">Learn more</a>
     </div>
+  </div>
+
+ <!-- Second project  -->
+  <div class="second-project-container">
+    <div class="slideshow-container">
+        <div class="second-slide-wrapper">
+            <img [src]="classifier_images[currentIndexClassifier]" alt="Slideshow Image" class="second-slide">
+        </div>
+        <a class="prev" (click)="nextSlideClassifier()">&#10094;</a>
+        <a class="next" (click)="prevSlideClassifier()">&#10095;</a>
+    </div>
+    <div class="container-rigth">
+        <h1 class="title-about-me">Classifier.</h1>
+        <p class="about-me-text">
+            <span>Platform:</span> Android. <br>
+            <span>Tools & Technologies:</span> Android Studio, Java Programming Language. <br>
+            <span>Objective:</span>In this project from my bachelor's degree, I developed an Android app using Android Studio, Java and TensorFlow that performs real-time image recognition. The app employs a custom-trained convolutional neural network (CNN) to identify objects via the device’s camera, providing instant feedback to the user.<br>
+            <span>Project Overview:</span>The Classifier Android app is a user-friendly application that allows users to recognize objects in images. Once an object is identified, users can access additional information about it via Wikipedia, providing a seamless way to learn more about recognized items.
+        </p>
+        <a href="https://github.com/GabrielBuchila/Classifier.git">Learn more</a>
+    </div>
+  </div>
 </div>

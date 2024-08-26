@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  images: string[] = [
+  sList_images: string[] = [
     'assets/images/SList/1.png',
     'assets/images/SList/2.png',
     'assets/images/SList/3.png',
@@ -19,18 +19,35 @@ export class ProjectsComponent {
     'assets/images/SList/8.png'
   ];
 
-  currentIndex = 0;
+  classifier_images: string[] = [
+    'assets/images/Classifier/1.jpg',
+    'assets/images/Classifier/2.jpg',
+    'assets/images/Classifier/3.jpg',
+    'assets/images/Classifier/4.jpg'
+  ];
+
+  currentIndexSlist = 0;
+  currentIndexClassifier = 0;
 
   constructor() {
-    setInterval(() => this.nextSlide(), 3000); // Change slide every 3 seconds
+    setInterval(() => this.nextSlideSlist(), 3000); // Change slide every 3 seconds
+    setInterval(() => this.nextSlideClassifier(), 3000); // Change slide every 3 seconds
   }
 
-  nextSlide() {
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+  nextSlideSlist() {
+    this.currentIndexSlist = (this.currentIndexSlist + 1) % this.sList_images.length;
   }
 
-  prevSlide() {
-    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+  nextSlideClassifier() {
+    this.currentIndexClassifier = (this.currentIndexClassifier + 1) % this.classifier_images.length;
+  }
+
+  prevSlideSlist() {
+    this.currentIndexSlist = (this.currentIndexSlist - 1 + this.sList_images.length) % this.sList_images.length;
+  }
+
+  prevSlideClassifier() {
+    this.currentIndexClassifier = (this.currentIndexClassifier - 1 + this.classifier_images.length) % this.classifier_images.length;
   }
 
 }

@@ -1,23 +1,23 @@
 .flex-container{
-  display: flex; /* Enables Flexbox layout */
-  justify-content: space-between; /* Optional: Adds space between the boxes */
+  display: flex; 
+  justify-content: space-between; 
   margin-top: 60px;
 }
 .container-left {
-    flex: 1; /* Each box takes equal space */
-    margin: 10px; /* Optional: Adds space between the boxes */
+    flex: 1; 
+    margin: 10px; 
     padding: 20px;
   }
   
   .container-left img {
-    max-width: 100%; /* Ensure the image scales well */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; 
+    height: auto; 
     border-radius: 50px;
   }
 
   .container-rigth {
-    flex: 1; /* Each box takes equal space */
-    margin: 10px; /* Optional: Adds space between the boxes */
+    flex: 1; 
+    margin: 10px; 
     padding: 20px;
   }
 
