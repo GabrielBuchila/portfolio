@@ -1,30 +1,31 @@
+
 .flex-container{
   display: flex; 
+  flex-wrap: wrap; 
   justify-content: space-between; 
-  margin-top: 60px;
+  min-height: 80vh;
 }
 .container-left {
-    flex: 1; 
-    margin: 10px; 
-    padding: 20px;
+  max-width: 100%;
+  margin: auto;
   }
   
-  .container-left img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 50px;
-  }
+.container-left img {
+  max-width: 100%; 
+  border-radius: 50px;
+}
 
-  .container-rigth {
-    flex: 1; 
-    margin: 10px; 
-    padding: 20px;
-  }
+.container-rigth {
+  flex: 1; 
+  // margin: 10px; 
+  margin-top: 7vh;
+  padding: 25px;
+}
 
-  .title-about-me{
-    font-size: 50px;
-  }
+.title-about-me{
+  font-size: 50px;
+}
 
-  .about-me-text{
-    font-size: 19.5px;
-  }
+.about-me-text{
+  font-size: 20px;
+}

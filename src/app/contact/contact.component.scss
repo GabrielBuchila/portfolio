@@ -1,17 +1,10 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Outfit';
-}
 
 .contact-container{
-    height: 80vh;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center; 
+    align-items: center;   
+    min-height: 60vh; 
+
 }
 
 .contact-left{
@@ -29,9 +22,9 @@ body{
 }
 
 .contact-inputs{
-    width: 400px;
+    width: 100%;
     height: 50px;
-    border: none;
+    border: 10px;
     outline: none;
     padding-left: 25px;
     font-weight: 500;

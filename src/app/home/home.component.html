@@ -1,12 +1,15 @@
-<div class="wrapper">
+<div class="home-wrapper">
     <div class="home-container">
+
         <div class="header-line1">
             Hello, I'm <span>Gabriel</span>
         </div>
+
         <div class="header-line1">
             I'm a Software Engineer
         </div>
-        <a class="home-aboutme" href="../about">About me</a>
-        <a class="download-cv" href="assets/Gabriel_Buchila_CV" download="Gabriel_Buchila_CV.pdf">Download CV</a>
+
+        <a class="home-aboutme" [routerLink]="['/about']">About me</a>
+        <a class="download-cv" [href]="['assets/Gabriel_Buchila_CV.pdf']" [download]="['Gabriel_Buchila_resume.pdf']">Download CV</a>
     </div>
 </div>
