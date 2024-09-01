@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Not Found</title>
-    <meta http-equiv="refresh" content="0; url=/portfolio/" />
+    <meta http-equiv="refresh" content="0; url=/" />
     <script type="text/javascript">
         (function() {
-            // Redirect to the Angular app
             var path = window.location.pathname;
-            window.location.href = '/portfolio' + path;
+            // Redirect to the base path of the Angular app without adding extra slashes
+            if (path !== '/' && path !== '/portfolio') {
+                window.location.href = '/portfolio' + path;
+            } else {
+                // Avoid infinite redirection for already correct paths
+                window.location.href = '/portfolio/';
+            }
         })();
     </script>
 </head>
