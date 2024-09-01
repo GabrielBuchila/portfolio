@@ -8,12 +8,13 @@
     <meta http-equiv="refresh" content="0; url=/" />
     <script type="text/javascript">
         (function() {
+            // Ensure we're redirecting to the base path
             var path = window.location.pathname;
-            // Redirect to the base path of the Angular app without adding extra slashes
-            if (path !== '/' && path !== '/portfolio') {
-                window.location.href = '/portfolio' + path;
+            if (path !== '/' && !path.startsWith('/portfolio')) {
+                // Redirect to the base path of the Angular app
+                window.location.href = '/portfolio/';
             } else {
-                // Avoid infinite redirection for already correct paths
+                // Redirect to the Angular app's home page
                 window.location.href = '/portfolio/';
             }
         })();
